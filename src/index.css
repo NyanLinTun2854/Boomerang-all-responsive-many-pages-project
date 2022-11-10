@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root {
+        --primary: #232526;
+        --secondary: #232526;
+    }
+
+    .heroBgDesktop {
+        background-image: url('./img/heroBgDesktop.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutBgDesktop {
+        background-image: url('./img/aboutFirstBg1.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgEmployee {
+        background-image: url('./img/employee.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blogBg {
+        background-image: url('./img/blogBg.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .shopBg {
+        background-image: url('./img/shopBg.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .demoBg {
+        background-image: url('./img/demoBg.jpg');
+        background-position-x: 50%;
+        background-position-y: center;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* .color-overlay-demo {
+        background-image: linear-gradient(135deg, var(#fc00ff), var(#00dbde));
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: -1;
+    } */
+
+    .color-overlay {
+
+        background-image: linear-gradient(135deg, var(--primary), var(--secondary));
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .employeeImg {
+        background: rgba(34, 34, 34, .6);
+    }
+
+    .priceBg {
+        background: url("./img/pexels-fauxels-3184465.jpg");
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgAboutSwipe {
+        background-image: url("./img/bgAboutSwipe.jpg");
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .color-overlay-2 {
+
+        background-image: linear-gradient(135deg, #83a4d4, #83a4d4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .swiper-slide {
+        @apply w-full h-full flex justify-center items-center text-center
+    }
+
+    .swipper-button-prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translatey(-50%);
+        z-index: 10;
+        cursor: pointer;
+    }
+    
+    .swipper-button-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translatey(-50%);
+        z-index: 10;
+        cursor: pointer;
+    }
 }

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav'
+import FirstLook from './components/FirstLook'
+import AboutPage from './components/AboutPage'
+import PLook from './components/Porfolio/PLook'
+import BLook from './components/Blog/BLook'
+import SLook from './components/WShop/SLook'
+import CLook from './components/CheckOut/CLook'
+import DLook from './components/DemoPage/DLook'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path='/' element={<FirstLook />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/portfolio' element={<PLook />}/>
+        <Route path='/blog' element={<BLook/>}/>
+        <Route path='/shop' element={<SLook/>} />
+        <Route path='/checkout' element={<CLook/>} />
+        <Route path='/demo' element={<DLook/>} />
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
