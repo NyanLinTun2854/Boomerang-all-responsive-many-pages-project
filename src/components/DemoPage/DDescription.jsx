@@ -20,11 +20,11 @@ import DImgCard from "./DImgCard";
 const DDescription = () => {
   return (
     <div className="w-full pb-[100px]">
-      <div className="w-[70%] mx-auto flex justify-between mb-[40px]">
-        <p>Multi Page Demos</p>
+      <div className="w-[90%] md:w-[70%] mx-auto flex justify-between mb-[40px]">
+        <p className="uppercase">Multi Page Demos</p>
         <p>ONE PAGE DEMOS</p>
       </div>
-      <div className="grid grid-cols-4 gap-x-8 gap-y-4 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-4 px-4">
         {demoCards.map((card) => (
           <DImgCard card={card} />
         ))}

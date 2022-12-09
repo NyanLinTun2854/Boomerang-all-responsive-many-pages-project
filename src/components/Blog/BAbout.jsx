@@ -31,7 +31,7 @@ const BAbout = () => {
         activeGenre={activeGenre}
         setActiveGenre={setActiveGenre}
       />
-      <div className="w-full grid grid-cols-5 grid-rows-[242px] grid-flow-dense auto-rows-auto gap-x-2 gap-y-2 px-2">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 grid-rows-[242px] grid-flow-dense auto-rows-auto gap-x-2 gap-y-2 px-2 place-items-center">
         {filtered.map((bCard) => (
           <BImageCard bCard={bCard} />
         ))}

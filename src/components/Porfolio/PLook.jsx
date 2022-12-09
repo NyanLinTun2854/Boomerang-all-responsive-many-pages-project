@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../Nav";
 import PAbout from "./PAbout";
 import PHome from "./PHome";
 import Footer from "../Footer";
+import Nav from "../Nav";
 
 const PLook = () => {
   return (

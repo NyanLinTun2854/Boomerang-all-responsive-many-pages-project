@@ -14,7 +14,7 @@ const Cards = () => {
   }, []);
   return (
     <>
-      <div className="w-[30%] mx-auto flex justify-between items-center py-[40px]">
+      <div className="w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%] mx-auto flex justify-between items-center py-[40px]">
         <CardsButton
           allImage={allImage}
           setFiltered={setFiltered}
@@ -22,7 +22,7 @@ const Cards = () => {
           setActiveGenre={setActiveGenre}
         />
       </div>
-      <div className="w-full h-auto grid grid-cols-3 gap-x-2 gap-y-2">
+      <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-2 justify-end">
         {filtered.map((card) => (
           <ImageCard card={card} />
         ))}

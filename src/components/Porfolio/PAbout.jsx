@@ -12,8 +12,8 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 const PAbout = () => {
   return (
     <div className="w-full pt-[120px]">
-      <div className="w-[90%] mx-auto flex font-poppin">
-        <div className="w-[65%] pb-[100px]">
+      <div className="w-[90%] mx-auto flex flex-col md:flex-row font-poppin">
+        <div className="w-[100%] md:w-[65%] pb-[100px]">
           <div className="w-full pb-[35px] mb-[45px] border-b border-slate-200">
             <div className="w-full mb-[35px] duration-500 hover:-translate-y-[4px]">
               <img
@@ -26,7 +26,7 @@ const PAbout = () => {
               <h1 className="text-[1.5625rem] font-[500] leading-[1.3] mb-[8px]">
                 Bluetooth Speaker
               </h1>
-              <div className="space-x-4 flex mb-[30px]">
+              <div className="gap-x-4 flex flex-wrap mb-[30px]">
                 <p className="text-[.8125rem] font-[400] leading-[1.8] text-[#a3a6a8]">
                   November 18,2016
                 </p>
@@ -71,7 +71,7 @@ const PAbout = () => {
               <h1 className="text-[1.5625rem] font-[500] leading-[1.3] mb-[8px]">
                 Minimalist Chandelier
               </h1>
-              <div className="space-x-4 flex mb-[30px]">
+              <div className="gap-x-4 flex flex-wrap mb-[30px]">
                 <p className="text-[.8125rem] font-[400] leading-[1.8] text-[#a3a6a8]">
                   November 18,2016
                 </p>
@@ -116,7 +116,7 @@ const PAbout = () => {
               <h1 className="text-[1.5625rem] font-[500] leading-[1.3] mb-[8px]">
                 Standard Shape
               </h1>
-              <div className="space-x-4 flex mb-[30px]">
+              <div className="gap-x-4 flex flex-wrap mb-[30px]">
                 <p className="text-[.8125rem] font-[400] leading-[1.8] text-[#a3a6a8]">
                   November 18,2016
                 </p>
@@ -161,7 +161,7 @@ const PAbout = () => {
               <h1 className="text-[1.5625rem] font-[500] leading-[1.3] mb-[8px]">
                 Street Fashion
               </h1>
-              <div className="space-x-4 flex mb-[30px]">
+              <div className="gap-x-4 flex flex-wrap mb-[30px]">
                 <p className="text-[.8125rem] font-[400] leading-[1.8] text-[#a3a6a8]">
                   November 18,2016
                 </p>
@@ -215,8 +215,8 @@ const PAbout = () => {
             </div>
           </div>
         </div>
-        <div className="w-[35%] h-[100vh]">
-          <div className="w-[90%] ml-auto flex justify-between items-center border border-slate-300 px-4 py-3  mb-[60px]">
+        <div className="w-[100%] md:w-[35%] h-auto md:h-[100vh]">
+          <div className="w-[100%] md:w-[90%] md:ml-auto flex justify-between items-center border border-slate-300 px-4 py-3  mb-[60px]">
             <input
               type="text"
               className="w-[80%] outline-none placeholder:font-poppin placeholder:text-[13px] placeholder:text-[#6f7883] placeholder:tracking-tight"
@@ -224,7 +224,7 @@ const PAbout = () => {
             />
             <HiSearch className="text-[#dddddd]" />
           </div>
-          <div className="w-[90%] ml-auto">
+          <div className="w-[100%] md:w-[90%] md:ml-auto">
             <h1 className="text-[.6875rem] font-[700] tracking-[2.6px] uppercase mb-[14px]">
               Categories
             </h1>
@@ -265,7 +265,7 @@ const PAbout = () => {
               <p className="hover:text-indigo-500 cursor-pointer">18</p>
             </div>
           </div>
-          <div className="w-[90%] ml-auto mt-[60px]">
+          <div className="w-[100%] md:w-[90%] md:ml-auto mt-[60px]">
             <h1 className="text-[.6875rem] font-[700] tracking-[2.6px] uppercase mb-[14px]">
               Recent Posts
             </h1>
@@ -326,12 +326,12 @@ const PAbout = () => {
               </div>
             </div>
           </div>
-          <div className="w-[90%] ml-auto mt-[60px]">
+          <div className="w-[100%] md:w-[90%] md:ml-auto mt-[60px]">
             <h1 className="text-[.6875rem] font-[700] tracking-[2.6px] uppercase mb-[14px]">
               Twitter Feed
             </h1>
           </div>
-          <div className="w-[90%] ml-auto mt-[60px]">
+          <div className="w-[100%] md:w-[90%] md:ml-auto mt-[60px]">
             <h1 className="text-[.6875rem] font-[700] tracking-[2.6px] uppercase mb-[14px]">
               Tags
             </h1>

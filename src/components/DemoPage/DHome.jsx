@@ -5,7 +5,7 @@ const DHome = () => {
     <div className="w-full min-h-[100vh] flex justify-center items-center relative demoBg -z-20">
       <div className="color-overlay-demo"></div>
       <div className="w-[80%] h-full mx-auto text-white font-poppin">
-        <h1 className="text-[6rem] font-[600] text-center px-6 mb-8 leading-[80px]">
+        <h1 className="text-[44px] md:text-[6rem] font-[600] text-center px-0 sm:px-6 mb-8 leading-[80px]">
           Boomerang
         </h1>
         <p className="text-[0.9375rem] font-[400] text-center mb-10 leading-7">

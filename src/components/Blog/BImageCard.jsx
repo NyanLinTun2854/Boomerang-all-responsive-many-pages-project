@@ -5,8 +5,8 @@ const BImageCard = ({ bCard }) => {
     <div
       className={
         bCard.rowBoolean
-          ? `w-full h-[484px] group overflow-hidden row-span-2 ${bCard.order}`
-          : `w-full h-[242px] group overflow-hidden ${bCard.order}`
+          ? `w-full h-[484px] group overflow-hidden row-span-2 ${bCard.order} place-content-center`
+          : `w-full h-[242px] group overflow-hidden ${bCard.order} place-content-center`
       }
     >
       <div className="relative w-full h-full translate-y-0 transition duration-500 group-hover:-translate-y-[90px]">

@@ -9,7 +9,7 @@ const BCardButton = ({ allImg, setFiltered, activeGenre, setActiveGenre }) => {
     setFiltered(allImg.filter((i) => i.genre.includes(activeGenre)));
   }, [activeGenre]);
   return (
-    <div className="w-full flex justify-center gap-4 py-10">
+    <div className="w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] mx-auto flex flex-wrap justify-between items-center space-x py-[40px] gap-y-2">
       <button
         className="text-cardActive font-playFair italic opacity-[0.6] text-[.875rem] font-[400]"
         onClick={() => {
@@ -35,12 +35,12 @@ const BCardButton = ({ allImg, setFiltered, activeGenre, setActiveGenre }) => {
         Digital &nbsp; &nbsp; /
       </button>
       <button
-        className="text-cardActive font-playFair italic opacity-[0.6] text-[.875rem] font-[400]"
+        className="text-cardActive font-playFair italic opacity-[0.6] text-[.875rem] font-[400] mx-0 sm:mx-0"
         onClick={() => {
           setActiveGenre("Packaging");
         }}
       >
-        Packaging &nbsp; &nbsp; /
+        Packaging
       </button>
     </div>
   );

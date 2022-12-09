@@ -27,12 +27,12 @@ import SwiperCore from "swiper";
 const Price = () => {
   const [my_swiper, set_my_swiper] = useState({});
   return (
-    <div>
-      <div className="w-full h-[100vh] priceBg">
-        <div className="color-overlay-2"></div>
+    <div className="w-full ">
+      <div className="w-full h-auto md:h-[100vh] 2xl:h-[800px] priceBg">
+        <div className="color-overlay-2 2xl:h-[800px]"></div>
         <div
           div
-          className="w-[80%] h-full mx-auto flex justify-center items-center"
+          className="w-[100%] md:w-[80%] h-auto md:h-full mx-auto flex justify-center items-center py-[30px]"
         >
           <Swiper
             spaceBetween={30}
@@ -45,9 +45,15 @@ const Price = () => {
             pagination={{
               clickable: true,
             }}
+            navigation={false}
             onInit={(ev) => {
               set_my_swiper(ev);
             }}
+            // breakpoints={{
+            //   768: {
+            //     width: 400,
+            //   },
+            // }}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper w-full h-[400px]"
           >
@@ -79,23 +85,24 @@ const Price = () => {
             ))}
             <button
               onClick={() => my_swiper.slidePrev()}
-              className="swipper-button-prev"
+              className="swipper-button-prev hidden md:block"
             >
-              <FiArrowLeft className="text-2xl text-white font-[600]" />
+              <FiArrowLeft className="text-2xl text-white font-[600] " />
             </button>
             <button
               onClick={() => my_swiper.slideNext()}
-              className="swipper-button-next"
+              className="swipper-button-next hidden md:block"
             >
               <FiArrowRight className="text-2xl text-white font-[600]" />
             </button>
           </Swiper>
         </div>
       </div>
-      <div className="w-full h-[630px] relative bg-[#f8f8f8]">
-        <div className="w-[90%]  absolute -top-14 -translate-x-[50%]  left-[50%]">
-          <div className="w-full grid grid-cols-3">
-            <div className="flex flex-col items-center shadow-xl border border-b-[#f0f0f0] bg-white rounded-[4px] duration-500 hover:scale-[104%]">
+      {/* h-[1500px] md:h-[1100px] lg:h-[600px] -top-14 -translate-x-[50%]  left-[50%] */}
+      <div className="w-full 2xl:container relative h-[1500px] md:h-[1100px]  lg:h-[600px] bg-[#f8f8f8] mx-auto">
+        <div className="w-[90%] mx-auto h-auto absolute -top-14 -translate-x-[50%] left-[50%]">
+          <div className="w-full 2xl:h-[120%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col items-center shadow-xl border border-b-[#f0f0f0] bg-white rounded-[4px] duration-500 hover:scale-[104%] 2xl:h-[500px]">
               <div className="mb-[20px] pt-[30px]">
                 <TfiSlice className="w-[40px] h-[40px]" />
               </div>
@@ -156,7 +163,7 @@ const Price = () => {
                 </DynamicButton>
               </div>
             </div>
-            <div className="flex flex-col items-center shadow-xl border border-b-[#f0f0f0] bg-white rounded-[4px] duration-500 hover:scale-[104%]">
+            <div className="flex flex-col items-center shadow-xl border border-b-[#f0f0f0] bg-white rounded-[4px] duration-500 hover:scale-[104%] place-content-center">
               <div className="mb-[20px] pt-[30px]">
                 <TfiMarkerAlt className="w-[40px] h-[40px]" />
               </div>

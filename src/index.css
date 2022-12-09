@@ -17,9 +17,13 @@
         background-position-x: 50%;
         background-position-y: center;
         mix-blend-mode: overlay;
-        background-attachment: fixed;
+        /* background-attachment: ; */
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .heroBgDesktoplg {
+        background-attachment: fixed !important;
     }
 
     .aboutBgDesktop {
@@ -27,9 +31,13 @@
         background-position-x: 50%;
         background-position-y: center;
         mix-blend-mode: overlay;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .aboutBgDesktoplg {
+        background-attachment: fixed !important;
     }
 
     .bgEmployee {
@@ -37,9 +45,13 @@
         background-position-x: 50%;
         background-position-y: center;
         mix-blend-mode: overlay;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .bgEmployeelg {
+        background-attachment: fixed !important;
     }
 
     .blogBg {
@@ -141,5 +153,9 @@
         transform: translatey(-50%);
         z-index: 10;
         cursor: pointer;
+    }
+
+    .scrollY::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
     }
 }
